@@ -6,5 +6,13 @@
         "imageUrl": "https://images5.alphacoders.com/613/613076.jpg",
         "summary": "A gamey game for gamers",
         "_id": "4d6e5f1c-2e15-4b5f-b9a7-6481fae4cade"
+    },
+    "3888ae1f-4eb8-49fc-bb8a-b05619f0b7d2": {
+        "title": "Game title2",
+        "category": "some game",
+        "maxLevel": "49",
+        "imageUrl": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2018/09/13-blancavidal.com_.jpg?q=50&fit=crop&w=825&dpr=1.5",
+        "summary": "Another gamey game for gamers",
+        "_id": "3888ae1f-4eb8-49fc-bb8a-b05619f0b7d2"
     }
 }

@@ -7,6 +7,12 @@ export const gameService = {
         const games = Object.values(result);
         return games;
     },
+    async getOne(gameId) {
+        const response = await fetch(`${baseUrl}/${gameId}`);
+        const game = await response.json();
+        // const game = Object.values(result);
+        return game;
+    },
     async create(gameData) {
         const response = await fetch(baseUrl, {
             method: 'POST',
