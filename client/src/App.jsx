@@ -24,14 +24,10 @@ function App() {
           <Route path='/games' element={<GameCatalog />} />
           <Route path='/games/create' element={<CreateGame />} />
           <Route path='/games/:gameId/details' element={<GameDetails />} />
+          <Route path='/games/:gameId/edit' element={<EditGame />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
         </Routes> 
-
-        {/* <EditGame /> */}
-
-        {/* <GameDetails /> */}
-
       </main>
 
     </div>

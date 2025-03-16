@@ -24,5 +24,17 @@ export const gameService = {
 
         const result = await response.json();
         return result;
+    }, 
+    async edit(gameId, gameData) {
+        const response = await fetch(`${baseUrl}/${gameId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(gameData),
+        });
+
+        const result = await response.json();
+        return result;
     }
 }; 

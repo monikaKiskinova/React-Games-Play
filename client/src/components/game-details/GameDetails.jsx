@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import { gameService } from "../../services/gameService";
 import { useParams } from "react-router";
+import { Link } from "react-router";
+
+import { gameService } from "../../services/gameService";
 
 export default function GameDetails() {
     const [game, setGame] = useState({});
@@ -45,8 +47,8 @@ export default function GameDetails() {
 
                 {/* <!-- Edit/Delete buttons ( Only for creator of this game )  --> */}
                 <div className="buttons">
-                    <a href="#" className="button">Edit</a>
-                    <a href="#" className="button">Delete</a>
+                    <Link to={`/games/${gameId}/edit`} className="button">Edit</Link>
+                    <Link to={`/games/${gameId}/delete`} className="button">Delete</Link>
                 </div>
             </div>
 
